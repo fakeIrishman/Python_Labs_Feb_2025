@@ -1,24 +1,15 @@
-Python 3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> import this
-The Zen of Python, by Tim Peters
+#! /usr/bin/env phyton3
+# Author: kdenisen
+# Versionn: 1.0
+# Description: This is my first Python script
 
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
+# name = "Kirill Denisenko"
+name = input ("Enter your name:")
+print("My name is", name)
+print("My name is "+name)
+
+import random
+print("Lucky number is", random.randint(1,50))
+
+import math
+print("Cosine of 0.5 is", math.cos(0.5))
