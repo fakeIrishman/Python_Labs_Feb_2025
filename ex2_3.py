@@ -23,5 +23,9 @@ theta = deg * (pi/180)
 
 y = y0 + x*tan(theta) - (g * x**2) / (2 * (v0 * cos(theta))**2)
 
-print ("At barrel height of",str(y0),"after horizontal distance of",str(x), ", an elevation of",str(deg),"degrees, and an initial velocity of",str(v0),"m/s the heght of the projectile will be",str(y),"m")
+print ("At barrel height of",str(y0)+"m" \
+       "after horizontal distance of",str(x),"m,",\
+       "an elevation of",str(deg),"degrees,",\
+       "and an initial velocity of",str(v0),"m/s", \
+       "the heght of the projectile will be",str(y),"m")
 
