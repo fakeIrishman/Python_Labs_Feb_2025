@@ -33,6 +33,8 @@ for line in fh_in:
    # m = re.fullmatch(r"^[A-Z].{4}[A-Z]\n$", line) # match ENTIRE LINE including HIDDEN characters!
    # m = re.search(r"^(.)(.).\2\1$", line ) # match 5-letter palindromes
    # m = re.search(r"([A-Z]).*\1$", line) # match lines which start and end with same capital
+   m = re.search(r"([A-Z]).*\1$", line, flags =re.IGNORECASE) # match lines which start and end with same capital
 
    if m:
-        print(line, end ="")
+        print(f"Matched {m.group()} on {line.rstrip()} at {m.start()} - {m.end()}, " 
+              f"Groupings = {m.groups()}, Group 1 = {m.group(1)}")s
