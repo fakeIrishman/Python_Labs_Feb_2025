@@ -25,13 +25,18 @@ def div(x,z):
     """Return QUOTIENT of x divided by z to 3 decimal places"""
     return round(x/z,3)
 
-print ("Basic calculator app")
+def main():
+    print ("Basic calculator app")
 
-print (f"4 + 3 = {add(4,3)}")
-print (f"4 + 3 + 2 = {add(4,3,2)}")
-print (f"4 * 3 = {mul(4,3)}")
-print (f"4 * 3 * 2 = {mul(4,3,2)}")
-print (f"4 / 3 = {div(4,3)}")
+    print (f"4 + 3 = {add(4,3)}")
+    print (f"4 + 3 + 2 = {add(4,3,2)}")
+    print (f"4 * 3 = {mul(4,3)}")
+    print (f"4 * 3 * 2 = {mul(4,3,2)}")
+    print (f"4 / 3 = {div(4,3)}")
+    return None
 
-
-sys.exit(0)
+#Namespace TRICK
+if __name__ == "__main__":
+    #EXECUTE main only if ran directly in program
+    main()
+    sys.exit(0)
