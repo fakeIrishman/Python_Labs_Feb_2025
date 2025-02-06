@@ -37,4 +37,4 @@ for line in fh_in:
 
    if m:
         print(f"Matched {m.group()} on {line.rstrip()} at {m.start()} - {m.end()}, " 
-              f"Groupings = {m.groups()}, Group 1 = {m.group(1)}")s
+              f"Groupings = {m.groups()}, Group 1 = {m.group(1)}")
