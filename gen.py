@@ -7,6 +7,8 @@
 """
 
 def frange(start, stop=None , step = 0.25):
+    if step == 0:
+        return None
     if stop is None:
         stop=start
         current = 0.0
@@ -17,6 +19,7 @@ def frange(start, stop=None , step = 0.25):
         yield current
         current +=step
 
+print (list(frange(1,3,0)))
 for num in frange(3.142, 12):
     print(f"{num:05.2f}")
 
